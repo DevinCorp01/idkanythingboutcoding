@@ -16,8 +16,21 @@ namespace ConsoleApplication1
             set { head = value; }
         }
         public List() { }
-        public void addfirst(Element<T> e) { e.Next = head;
+        public void Addfirst(Element<T> e) { e.Next = head;
         this.head = e;
+        }
+        public List()
+        {
+            this.head = null;
+        }
+        public void PrintList()
+        {
+            Element<T> point = head;
+            while (point != null)
+            {
+                Console.WriteLine(point.Data);
+                point = point.Next;
+            }
         }
     }
 }
