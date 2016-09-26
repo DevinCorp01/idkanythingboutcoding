@@ -22,5 +22,11 @@ namespace ConsoleApplication1
             get { return next; }
             set { next = value; }
         }
+        public Element(T x)
+        {
+            this.data = x;
+            this.next = null;
+        }
+       /*ffefe*/
     }
 }
